@@ -18,3 +18,14 @@ describes basic use cases and pitfalls.
 **Actually sleeping devices**:
 - [hypnos](https://github.com/msemenistyi/hypnos) - Module for determining if device
 is actually sleeping.  
+
+###Caching
+- [jsCache](https://github.com/mortzdk/jsCache)
+- memoize
+- 
+
+###Render
+
+####CSS
+- [Veinjs](https://github.com/israelidanny/veinjs) - inject css into dynamic stylesheet.
+- [grunt-uncss](https://github.com/addyosmani/grunt-uncss).
