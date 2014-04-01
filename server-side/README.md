@@ -6,8 +6,8 @@
 ###Apache
 
 ###Nginx
-- apt-get install nginx
-- open nginx.conf at /etc/nginx/nginx.conf with editor
+- <code>apt-get install nginx</code>
+- open <code>/etc/nginx/nginx.conf</code> with editor
 - apply changes from the [nginx.conf](nginx.conf)
-- /etc/init.d/nginx start|restart
-- /etc/init.d/nginx configtest
+- <code>/etc/init.d/nginx start|restart</code>
+- <code>/etc/init.d/nginx configtest</code>
