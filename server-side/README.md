@@ -1,11 +1,9 @@
 #Cherdak: Web Performance - Server-side Tips
 ![Cherdak](../logo.jpg)
 
-##Server side
+##Apache
 
-###Apache
-
-###Nginx
+##Nginx
 - Install Nginx:
 ```shell
 apt-get install nginx
