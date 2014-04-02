@@ -146,6 +146,45 @@ RPAFheader X-Real-IP
 </VirtualHost>
 ```
 
+## Varnish
+
+### Install Varnish
+Ubuntu:
+```shell
+curl http://repo.varnish-cache.org/debian/GPG-key.txt | sudo apt-key add -
+echo "deb http://repo.varnish-cache.org/ubuntu/ precise varnish-4.0" | sudo tee -a /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install varnish
+```
+
+CentOS/Fedora:
+```shell
+rpm --nosignature -i http://repo.varnish-cache.org/redhat/varnish-4.0/el5/noarch/varnish-release-4.0-1.noarch.rpm
+yum install varnish
+```
+
+### Change configuration /etc/default/varnish
+```shell
+DAEMON_OPTS="-a :80 \
+-T localhost:6028 \
+-f /etc/varnish/default.vcl \
+-S /etc/varnish/secret \
+-s malloc,256m"
+```
+
+### In /etc/varnish/default.vcl specify where is our web server
+```shell
+backend default {
+	.host = "127.0.0.1";
+	.port = "80";
+}
+```
+
+## PageSpeed Module
+- [module](http://www.modpagespeed.com/)
+- [apache examples](http://cherdak.cybind.net/mod_pagespeed_example/index.html)
+
+
 ## Benchmark Tools
 - [wrk](https://github.com/wg/wrk)
 ```shell
@@ -156,7 +195,3 @@ wrk -t 10 -c N -r 10m http://localhost:8080/index.html
 ab -n 25000 -c 50 http://www.example.com/image.png
 ```
 - [Web Page Test](http://www.webpagetest.org/)
-
-## PageSpeed Module
-- [module](http://www.modpagespeed.com/)
-- [apache examples](http://cherdak.cybind.net/mod_pagespeed_example/index.html)
