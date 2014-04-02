@@ -148,12 +148,10 @@ RPAFheader X-Real-IP
 
 ## Benchmark Tools
 - [wrk](https://github.com/wg/wrk)
-Usage exmple:
 ```shell
 wrk -t 10 -c N -r 10m http://localhost:8080/index.html
 ```
 - [ab - Apache HTTP server benchmarking tool](http://httpd.apache.org/docs/2.2/programs/ab.html)
-Usage exmple:
 ```shell
 ab -n 25000 -c 50 http://www.example.com/image.png
 ```
@@ -161,3 +159,4 @@ ab -n 25000 -c 50 http://www.example.com/image.png
 
 ## PageSpeed Module
 - [module](http://www.modpagespeed.com/)
+- [apache examples](http://cherdak.cybind.net/mod_pagespeed_example/index.html)
