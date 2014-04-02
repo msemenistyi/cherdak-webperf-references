@@ -1,9 +1,9 @@
 #Cherdak: Web Performance - Server-side Tips
 ![Cherdak](../logo.jpg)
 
-##Apache
+##Apache performance tuning
 
-##Nginx
+##Nginx performance tuning
 - Install Nginx:
 ```shell
 apt-get install nginx
@@ -19,9 +19,9 @@ apt-get install nginx
 /etc/init.d/nginx start|restart
 ```
 
-###Nginx (front-end) + Apache (back-end)
+##Nginx (front-end) + Apache (back-end)
 
-- Configure Nginx and Apache to listen different ports
+###Configure Nginx and Apache to listen different ports
 Nginx:
 ```shell
 listen 80;
@@ -31,7 +31,7 @@ Apache:
 Listen 127.0.0.1:81
 ```
 
-- Create virtual hosts with same root folder
+###Create virtual hosts with same root folder
 Nginx:
 ```shell
 server {
@@ -50,7 +50,7 @@ Apache:
 
 In this case headers in php scripts in Apache will be changed by Nginx. We can fix it with mod_rpaf module for Apache.
 
-- Last configuration
+###Last configuration
 Nginx:
 ```shell
 server {
