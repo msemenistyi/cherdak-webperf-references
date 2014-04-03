@@ -3,22 +3,6 @@
 
 ##Client side
 
-###Sleeping devices
-
-Method of taking advantage of knowledge about page visibility in order to reduce
-load for hidden pages.
-
-**Page Visibility API**:
-- [W3C draft](http://www.w3.org/TR/2011/WD-page-visibility-20110602/#pv-page-preview)
-- [visibilityjs](https://github.com/ai/visibilityjs) - A great wrapper which 
-also provides several useful functions.  
-- [HTML5Rocks article](http://www.html5rocks.com/en/tutorials/pagevisibility/intro/) - 
-describes basic use cases and pitfalls.  
-
-**Actually sleeping devices**:
-- [hypnos](https://github.com/msemenistyi/hypnos) - Module for determining if device
-is actually sleeping.  
-
 ###Caching
 - [jsCache](https://github.com/mortzdk/jsCache)
 
@@ -39,6 +23,9 @@ storage.
 
 ###Images
 
+
+**[Modern image formats comparison article](http://calendar.perfplanet.com/2013/browser-specific-image-formats/)** 
+
 ####Font icons
 - [Font Awesome](http://fortawesome.github.io/Font-Awesome/) - set of icons combined
 within one font.  
@@ -46,7 +33,6 @@ within one font.
 - [icnfnt](http://icnfnt.com/#/)
 - [fontello](http://fontello.com/)
 - [icomoon](http://icomoon.io/app/#/select)
-
 
 ####Convertion tools
 - [Image Magick](http://www.imagemagick.org/)
@@ -83,3 +69,21 @@ servers for confitional webp serving.
 conditionally serves either webp or jpegxr.
 - [koa-image-optimus](https://github.com/msemenistyi/koa-image-optimus) - analogue 
 of connect-image-optimus for koa. Work in progress.
+
+### Perceived performance
+
+####Sleeping devices
+
+Method of taking advantage of knowledge about page visibility in order to reduce
+load for hidden pages.
+
+**Page Visibility API**:
+- [W3C draft](http://www.w3.org/TR/2011/WD-page-visibility-20110602/#pv-page-preview)
+- [visibilityjs](https://github.com/ai/visibilityjs) - A great wrapper which 
+also provides several useful functions.  
+- [HTML5Rocks article](http://www.html5rocks.com/en/tutorials/pagevisibility/intro/) - 
+describes basic use cases and pitfalls.  
+
+**Actually sleeping devices**:
+- [hypnos](https://github.com/msemenistyi/hypnos) - Module for determining if device
+is actually sleeping.  
